@@ -5,6 +5,7 @@ public class Node<T extends Comparable<T>>{
     private Node<T> leftChild;
     private Node<T> rightChild;
 
+    //Constructor for the node
     public Node(T data){
         this.data = data;
         this.height = 1;
@@ -12,6 +13,7 @@ public class Node<T extends Comparable<T>>{
         this.rightChild = null;
     }
 
+    //getters, Setters for the data, height, leftChild, rightChild.
     public int getHeight(){
         return height;
     }

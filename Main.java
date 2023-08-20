@@ -3,9 +3,12 @@ public class Main {
     public static void main(String[] args) {
 
         Tree<Integer> avlTree = new AVLAdd<>();
-        avlTree.insert(10).insert(2).insert(6).insert(8).insert(25).insert(18).insert(35).insert(15).insert(22).insert(42)
-                .insert(30).insert(40).insert(12).insert(17).insert(19).insert(24).insert(28).insert(33).insert(38);
-                avlTree.traverse();
+        //adding data into the AVL Tree to test whether rotations work correctly
+        avlTree.add(1).add(2).add(3).add(4).add(5).add(6);
+        //traversing the AVL Tree, to print all data as it traverses
+        avlTree.traverse();
+        //Should print 4,2,1,3,5,6 as it traverses in Pre-Order.
+        //This confirms that the AVLTree and rotations work correctly.
 
     }
     
